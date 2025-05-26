@@ -76,7 +76,7 @@ def check_libapp_hash(libapp_hash: str) -> int | None:
         sys.exit()
     resp = (
         urlopen(
-            "https://raw.githubusercontent.com/Impact-I/reFlutter/main/enginehash.csv"
+            "https://raw.githubusercontent.com/nk521/reFlutter/main/enginehash.csv"
         )
         .read()
         .decode("utf-8")
@@ -322,7 +322,7 @@ def get_network_lib(
     if len(libapp_arm64[1]) != 0:
         try:
             urlretrieve(
-                "https://github.com/Impact-I/reFlutter/releases/download/android-"
+                "https://github.com/nk521/reFlutter/releases/download/android-"
                 + verUrl
                 + libapp_arm64[1]
                 + "/libflutter_arm64.so",
