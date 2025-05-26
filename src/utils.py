@@ -310,7 +310,7 @@ def get_network_lib(
     if len(libapp_ios[1]) != 0:
         try:
             urlretrieve(
-                "https://github.com/Impact-I/reFlutter/releases/download/ios-"
+                "https://github.com/nk521/reFlutter/releases/download/ios-"
                 + verUrl
                 + libapp_ios[1]
                 + "/Flutter",
@@ -334,7 +334,7 @@ def get_network_lib(
     if len(libapp_arm[1]) != 0:
         try:
             urlretrieve(
-                "https://github.com/Impact-I/reFlutter/releases/download/android-"
+                "https://github.com/nk521/reFlutter/releases/download/android-"
                 + verUrl
                 + libapp_arm[1]
                 + "/libflutter_arm.so",
@@ -346,7 +346,7 @@ def get_network_lib(
     if len(libapp_x64[1]) != 0:
         try:
             urlretrieve(
-                "https://github.com/Impact-I/reFlutter/releases/download/android-"
+                "https://github.com/nk521/reFlutter/releases/download/android-"
                 + verUrl
                 + libapp_x64[1]
                 + "/libflutter_x64.so",
@@ -358,7 +358,7 @@ def get_network_lib(
     if len(libapp_x86[1]) != 0:
         try:
             urlretrieve(
-                "https://github.com/Impact-I/reFlutter/releases/download/android-"
+                "https://github.com/nk521/reFlutter/releases/download/android-"
                 + verUrl
                 + libapp_x86[1]
                 + "/libflutter_x86.so",
