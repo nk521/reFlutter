@@ -78,7 +78,7 @@ def _build_engine(libapp_hash: str):
     global patch_dump
     if not os.path.exists("enginehash.csv"):
         urlretrieve(
-            "https://raw.githubusercontent.com/Impact-I/reFlutter/main/enginehash.csv",
+            "https://raw.githubusercontent.com/nk521/reFlutter/main/enginehash.csv",
             "enginehash.csv",
         )
 
