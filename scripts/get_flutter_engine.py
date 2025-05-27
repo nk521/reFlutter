@@ -31,7 +31,7 @@ file_name = sys.argv[1]
 min_hash_length = 40
 f = open(file_name, errors="ignore")
 
-lib_app_hash = []
+lib_app_hash = set()
 excluded_hashes = [
     "0000000000000000000000000000000000000000",
     "6666666666666660666666666666666666666666",
@@ -39,6 +39,7 @@ excluded_hashes = [
     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "a2a2a2a2a2a2aa4a2aa4a2aa4a2aa4a2aa4a2a2a",
     "3333333333333333333333333333333333333333",
+    "8888888888888888888888888888888888888888",
 ]
 result = ""
 counter = 0
@@ -50,10 +51,11 @@ for c in f.read():
         hashT = re.findall(r"([a-f\d]{40})", result)
         for _hash in hashT:
             if _hash not in excluded_hashes:
-                lib_app_hash.append(_hash)
+                lib_app_hash.add(_hash)
         f.close()
     result = ""
 
 for _hash in lib_app_hash:
+    print("trying", _hash)
     if is_hash_valid(_hash):
         print(_hash)
